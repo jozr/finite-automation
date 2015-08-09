@@ -1,3 +1,5 @@
+Dir["./NFA/*.rb"].each {|file| require file }
+
 class FARule < Struct.new(:state, :character, :next_state)
   def applies_to?(state, character)
     self.state == state && self.character == character
