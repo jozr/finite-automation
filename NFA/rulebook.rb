@@ -1,4 +1,3 @@
-require "./rule"
 require "set"
 
 class NFARulebook < Struct.new(:rules)
